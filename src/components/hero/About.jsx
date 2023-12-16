@@ -1,9 +1,9 @@
 import React from "react";
-import css from "./Hero.module.scss";
+import css from "./About.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 
-const Hero = () => {
+const About = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -57,4 +57,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default About;
