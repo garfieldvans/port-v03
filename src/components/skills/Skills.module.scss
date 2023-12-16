@@ -1,0 +1,59 @@
+@import "../../styles/constant.scss";
+
+.wrapper {
+  background: rgb(255, 255, 255);
+
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .title {
+        @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+        (max-width: $md), (max-width: $sm) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .titleText {
+        display: flex;
+      }
+    }
+
+    .exp {
+        @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+        (max-width: $md), (max-width: $sm){
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        gap: 1.5rem;
+        // justify-content: center;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 2px;
+      max-width: 50%;
+      margin-top: 1rem;
+      gap: 3rem;
+      justify-content: center;
+
+      .icon {
+        height: 3rem;
+        width: 3rem;
+
+        @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+            (max-width: $md), (max-width: $sm) {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
