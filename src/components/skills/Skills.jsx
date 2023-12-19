@@ -27,7 +27,7 @@ const Skills = () => {
             {skills.map((item, i) => {
               return (
                 <motion.div
-                variants={fadeIn("right", "tween", (i+1)*0.2, 1)}>
+                variants={fadeIn("right", "tween", (i+1)*0.2, 1)} key={i}>
 
                   <item.icon key={i} className={css.icon} />
                 </motion.div>

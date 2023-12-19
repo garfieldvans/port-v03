@@ -1,0 +1,55 @@
+@import '../../styles/constant.scss';
+
+.wrapper{
+    background: white;
+    overflow: hidden;
+
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+
+        .heading{
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            >:nth-child(2){
+                text-decoration: underline;
+                cursor: pointer;
+                color: #4A84CE;
+            }
+        }
+
+        .showCase{
+            width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+            border-radius: 3rem;
+            flex-wrap: wrap;
+
+            >div{
+                
+                display: flex;
+                flex-wrap: wrap;
+                cursor: pointer;
+
+                .imgs{
+                @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+                (max-width: $md), (max-width: $sm) {
+                    width: 100%;
+                }
+
+                border-radius: 20px;
+                max-width: 25rem;
+                max-height: 18rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 15%);
+                cursor: pointer;
+                width: 18rem;
+                height: max-content;
+            }
+            }
+
+            
+        }
+    }
+}

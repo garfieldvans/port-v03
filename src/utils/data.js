@@ -110,6 +110,36 @@ export const skills = [
       },
   ];
 
+  export const showcase = [{
+    title: "Portofolio v3",
+    img: "portv3.jpg",
+    link: "https://bastian-here-v3.vercel.app/"
+  },{
+    title: "CodeMasters Dashboard",
+    img: "adminDashboard.jpg",
+    link: "https://codemasters-admin-dashboard.vercel.app/signin"
+  },
+  {
+    title: "Portofolio v2",
+    img: "portv2.jpg",
+    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+  },
+  {
+    title: "Portofolio v2",
+    img: "portv2.jpg",
+    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+  },
+  {
+    title: "Portofolio v2",
+    img: "portv2.jpg",
+    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+  },
+  {
+    title: "Portofolio v2",
+    img: "portv2.jpg",
+    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+  }]
+
 export const sliderSettings = {
   dots: true,
   infinite: false,

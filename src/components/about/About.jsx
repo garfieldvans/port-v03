@@ -1,11 +1,11 @@
 import React from "react";
 import { WhatDoIHelp, projectExperience } from "../../utils/data";
-import css from "./Portfolio.module.scss";
+import css from "./About.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
 
 
-const Portfolio = () => {
+const About = () => {
     function countTotalProjects() {
         // Use .map() to extract the 'projects' property from each object
         const projectCounts = projectExperience.map(project => project.projects);
@@ -54,7 +54,7 @@ const Portfolio = () => {
         className={css.rightSide}>
           <span className="primaryText">What do i help?</span>
           {WhatDoIHelp.map((paragraph, i) => {
-            return <span className="secondaryText">{paragraph}</span>;
+            return <span className="secondaryText" key={i}>{paragraph}</span>;
           })}
           <div className={`flexCenter ${css.stats}`}>
           <div className={`flexCenter ${css.stat}`}>
@@ -73,4 +73,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default About;
