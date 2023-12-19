@@ -1,10 +1,10 @@
 import React, { Children } from "react";
-import css from "./Work.module.scss";
+import css from "./Works.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
 import { workExp } from "../../utils/data";
 
-const Work = () => {
+const Works = () => {
   return (
     <motion.section
       className={`paddings ${css.wrapper}`}
@@ -58,4 +58,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Works;
