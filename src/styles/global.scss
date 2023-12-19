@@ -14,13 +14,13 @@
 }
 
 .paddings {
-  @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}), (max-width: $sm) {
-    padding: 1.7rem;
+  @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}), (max-width: $sm), (max-width: $md) {
+    padding: 1rem;
   }
 
   @media (min-width: $xl), (min-width: $md) {
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   padding-left: 1.5rem;
@@ -101,7 +101,7 @@
   @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}), (max-width: $sm), (max-width: $md) {
     font-size: 1.7rem;
   }
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -111,7 +111,7 @@
     line-height: 30px;
   }
   line-height: 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .anchor {

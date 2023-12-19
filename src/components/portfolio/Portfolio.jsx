@@ -1,6 +1,9 @@
 import React from "react";
 import { WhatDoIHelp, projectExperience } from "../../utils/data";
 import css from "./Portfolio.module.scss";
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
+
 
 const Portfolio = () => {
     function countTotalProjects() {
@@ -18,14 +21,21 @@ const Portfolio = () => {
       
       const totalProjects = countTotalProjects();
   return (
-    <section className={css.wrapper}>
+    <motion.section 
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once: false, amount: 0.25}}
+    className={css.wrapper}>
       <div
         className={`paddings yPaddings flexCenter innerWidth ${css.container}`}
       >
         <div className={css.leftSide}>
           {projectExperience.map((exp, i) => {
             return (
-              <div className={css.exp} key={i}>
+              <motion.div 
+              variants={fadeIn("right", "tween",(i+0.4)*0.2, 0.7)}
+              className={css.exp} key={i}>
                 <div className="flexCenter" style={{ backgroundColor: exp.bg }}>
                   <exp.icon size={25} color="white" />
                 </div>
@@ -34,12 +44,14 @@ const Portfolio = () => {
                   <span>{exp.name}</span>
                   <span className="secondaryText">{exp.projects} Projects</span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
-        <div className={css.rightSide}>
+        <motion.div 
+        variants={textVariant(0.5)}
+        className={css.rightSide}>
           <span className="primaryText">What do i help?</span>
           {WhatDoIHelp.map((paragraph, i) => {
             return <span className="secondaryText">{paragraph}</span>;
@@ -54,10 +66,10 @@ const Portfolio = () => {
 
           </div>
         </div>
-        </div>
+        </motion.div>
         
       </div>
-    </section>
+    </motion.section>
   );
 };
 

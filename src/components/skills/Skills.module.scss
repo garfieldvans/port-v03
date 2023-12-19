@@ -1,18 +1,25 @@
 @import "../../styles/constant.scss";
 
 .wrapper {
-  background: rgb(255, 255, 255);
+  // background: rgb(255, 255, 255);
 
   .container {
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+
+    @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+            (max-width: $md), (max-width: $sm) {
+      padding-top: 0;
+      padding-bottom: 1rem;
+    }
 
     .title {
-        @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+      @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
         (max-width: $md), (max-width: $sm) {
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 1rem;
       }
       display: flex;
       align-items: center;
@@ -24,8 +31,8 @@
     }
 
     .exp {
-        @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
-        (max-width: $md), (max-width: $sm){
+      @media (min-width: #{$xsm-from}) and (max-width: #{$xsm-to}),
+        (max-width: $md), (max-width: $sm) {
         display: flex;
         flex-direction: row;
         max-width: 100%;
