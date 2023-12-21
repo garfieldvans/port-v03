@@ -30,7 +30,7 @@ const Header = () => {
         <div className={css.name}>Bastian</div>
 
         <ul
-          ref={menuRef}
+          // ref={menuRef}
           style={getMenuStyles(menuOpened)}
           className={`flexCenter ${css.menu}`}
         >
