@@ -13,6 +13,7 @@ const Skills = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.15 }}
     >
+      <a className="anchor" id="skill"></a>
       <div className={`innerWidth ${css.container}`}>
         <motion.div
           className={css.title}

@@ -1,7 +1,14 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
-import { FaGithub, FaInstagramSquare, FaReact, FaHtml5, FaNodeJs, FaPhp } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagramSquare,
+  FaReact,
+  FaHtml5,
+  FaNodeJs,
+  FaPhp,
+} from "react-icons/fa";
 import { IoIosMail, IoLogoWhatsapp, IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
@@ -38,8 +45,8 @@ export const workExp = [
     tenure: "Sep 2023 - Dec 2023",
     role: "Fullstack Developer",
     detail:
-      "Studying full stack developer material using the MERN stack and mobile development material using React Native."
-    },
+      "Studying full stack developer material using the MERN stack and mobile development material using React Native.",
+  },
   {
     place: "PT Medika Digital Nusantara",
     tenure: "Jul 2023 - Sep 2023",
@@ -60,17 +67,17 @@ export const contact = [
   {
     name: "GitHub",
     icon: FaGithub,
-    link: "#",
+    link: "https://github.com/garfieldvans",
   },
   {
     name: "Email",
     icon: IoIosMail,
-    link: "#",
+    link: "mailto: bastianhaloho12@gmail.com",
   },
   {
     name: "Whatsapp",
     icon: IoLogoWhatsapp,
-    link: "#",
+    link: "https://wa.me/+6288228655310",
   },
   {
     name: "IG",
@@ -80,65 +87,73 @@ export const contact = [
 ];
 
 export const skills = [
-    {
-      name: "html",
-      icon: FaHtml5
-    },
-    {
-      name: "javascript",
-      icon: IoLogoJavascript
-    },
-    {
-      name: "css",
-      icon: IoLogoCss3
-    },
-    {
-      name: "react",
-      icon: FaReact
-    },
-    {
-        name: "node",
-        icon: FaNodeJs
-      },
-      {
-        name: "php",
-        icon: FaPhp
-      },
-      {
-        name: "express",
-        icon: SiExpress
-      },
-  ];
+  {
+    name: "html",
+    icon: FaHtml5,
+  },
+  {
+    name: "javascript",
+    icon: IoLogoJavascript,
+  },
+  {
+    name: "css",
+    icon: IoLogoCss3,
+  },
+  {
+    name: "react",
+    icon: FaReact,
+  },
+  {
+    name: "node",
+    icon: FaNodeJs,
+  },
+  {
+    name: "php",
+    icon: FaPhp,
+  },
+  {
+    name: "express",
+    icon: SiExpress,
+  },
+];
 
-  export const showcase = [{
+export const showcase = [
+  {
+    id: 1,
+    repo: "https://github.com/garfieldvans/port-v03",
     title: "Portofolio v3",
     img: "portv3.jpg",
-    link: "https://bastian-here-v3.vercel.app/"
-  },{
+    link: "https://bastian-here-v3.vercel.app/",
+    detail:
+      "This website is the main portfolio website that I use. On this website I use the React JS framework and styling using the SASS/SCSS module.",
+  },
+  {
+    id: 2,
+    repo: "https://github.com/garfieldvans/Admin-Dashboard",
     title: "CodeMasters Dashboard",
     img: "adminDashboard.jpg",
-    link: "https://codemasters-admin-dashboard.vercel.app/signin"
+    link: "https://codemasters-admin-dashboard.vercel.app/signin",
+    detail:
+      "This website is a clone of the admin dashboard website from CodeMasters ID. Created using the React JS framework and styling components from Chakra UI. If you want to try the demo, use email: user1@example.com and password: password.",
+      
   },
   {
-    title: "Portofolio v2",
-    img: "portv2.jpg",
-    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+    id: 3,
+    repo: "https://github.com/garfieldvans/streaming-web",
+    title: "Flextream",
+    img: "flextream.jpg",
+    link: "https://flexstream-beta.vercel.app/",
+    detail: "This website is a project for creating an anime streaming website which was created using the React JS framework and styling components from Chakra UI. The API I use is the public API by https://api.jikan.moe/v4 ."
   },
   {
-    title: "Portofolio v2",
+    id: 4,
+    repo: "https://github.com/garfieldvans/portofolioV1-react-chakraUI",
+    title: "Portofolio v1",
     img: "portv2.jpg",
-    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
+    link: "https://portofolio-v1-react-chakra-ui.vercel.app/",
+    detail:"This website is my previous portfolio website project. Using React JS framework and Chakra UI styling."
   },
-  {
-    title: "Portofolio v2",
-    img: "portv2.jpg",
-    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
-  },
-  {
-    title: "Portofolio v2",
-    img: "portv2.jpg",
-    link: "https://portofolio-v1-react-chakra-ui.vercel.app/"
-  }]
+];
 
 export const sliderSettings = {
   dots: true,

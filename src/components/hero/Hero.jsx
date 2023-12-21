@@ -1,11 +1,12 @@
 import React from "react";
-import css from "./About.module.scss";
+import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 
-const About = () => {
+const Hero = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
+      <a className="anchor" id="hero"></a>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -57,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Hero;

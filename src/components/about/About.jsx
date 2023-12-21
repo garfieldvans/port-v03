@@ -27,6 +27,7 @@ const About = () => {
     whileInView="show"
     viewport={{once: false, amount: 0.25}}
     className={css.wrapper}>
+      <a className="anchor" id="about"></a>
       <div
         className={`paddings yPaddings flexCenter innerWidth ${css.container}`}
       >

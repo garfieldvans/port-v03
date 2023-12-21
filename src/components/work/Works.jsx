@@ -13,6 +13,8 @@ const Works = () => {
       whileInView={"show"}
       viewport={{ once: false, amount: 0.15 }}
     >
+
+      <a className="anchor" id="work"></a>
       <div className={`flexCenter innerWidth ${css.container}`}>
         <span className="primaryText">Work Experience</span>
 

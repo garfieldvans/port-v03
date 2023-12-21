@@ -1,58 +1,80 @@
 import React, { useEffect, useRef, useState } from "react";
 import css from "./Header.module.scss";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 import { headerVariants, getMenuStyles } from "../utils/motion";
-import {BiMenuAltRight} from 'react-icons/bi'
+import { BiMenuAltRight } from "react-icons/bi";
 import useOutsideAlerter from "../Hooks/useOutsideAlert";
 import useHeaderShadow from "../Hooks/useHeaderShadow";
+import { contact } from "../utils/data";
 
 const Header = () => {
   const menuRef = useRef(null);
-    const [menuOpened, setMenuOpened] = useState(false)
-    const headerShadow = useHeaderShadow()
+  const [menuOpened, setMenuOpened] = useState(false);
+  const headerShadow = useHeaderShadow();
 
-    useOutsideAlerter({
-      menuRef,
-      setMenuOpened,
-    });
-    
+  useOutsideAlerter({
+    menuRef,
+    setMenuOpened,
+  });
+
   return (
-    <motion.div 
-    variants={headerVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`bg-primary paddings ${css.wrapper}`}
-    viewport={{ once: true, amount: 0.25 }}
-    style={{boxShadow: headerShadow}}
+    <motion.div
+      variants={headerVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`bg-primary paddings ${css.wrapper}`}
+      viewport={{ once: true, amount: 0.25 }}
+      style={{ boxShadow: headerShadow }}
     >
-        <div className={`flexCenter innerWidth ${css.container}`}>
-            <div className={css.name}>
-                Bastian
-            </div>
+      <div className={`flexCenter innerWidth ${css.container}`}>
+        <div className={css.name}>Bastian</div>
 
-            <ul 
-            
-            style={getMenuStyles(menuOpened)}
-            className={`flexCenter ${css.menu}`}>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experise</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <ul
+          ref={menuRef}
+          style={getMenuStyles(menuOpened)}
+          className={`flexCenter ${css.menu}`}
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#skill">Experise</a>
+          </li>
+          <li>
+            <a href="#work">Experience</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portofolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
 
-            <div 
-            className={css.menuIcon}
-            onClick={() => {
-              // Log the click event or other relevant information
-              // console.log(menuOpened);
-              setMenuOpened((prev) => !prev);
-            }}
-            >
-                <BiMenuAltRight  size={40} className={css.icon}/>
-            </div>
+        <div className={css.contactIcon}>
+          {contact.map((contact, i) => {
+            return (
+              <div key={i}>
+                <a href={contact.link}>
+                <contact.icon className={css.iconz} size={27}/>
+                </a>
+              </div>
+            );
+          })}
         </div>
+
+        <div
+          className={css.menuIcon}
+          onClick={() => {
+            setMenuOpened((prev) => !prev);
+          }}
+        >
+          <BiMenuAltRight size={40} className={css.icon} />
+        </div>
+      </div>
     </motion.div>
   );
 };

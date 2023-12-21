@@ -1,0 +1,72 @@
+@import "../../styles/constant.scss";
+
+.wrapper {
+  // background: white;
+  .container {
+    gap: 4rem;
+    @media (max-width: $sm), (max-width: $md) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .left {
+      flex: 3;
+      > * {
+        display: block;
+        font-size: 28px;
+      }
+      > :nth-child(2) {
+        @media (max-width: $sm), (max-width: $md){
+            font-size: 22px;
+        }
+        margin-top: 3rem;
+        
+
+        a {
+          text-decoration: underline;
+          color: #4a87cf;
+        }
+      }
+    }
+
+    .right {
+      flex: 2;
+      flex-direction: column;
+      .info {
+        @media (max-width: $sm), (max-width: $md){
+            font-size: 16px;
+        }
+        margin-bottom: 2rem;
+        > * {
+          display: block;
+        }
+      }
+      .menu {
+        @media (max-width: $sm), (max-width: $md) {
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: "center";
+        gap: 2rem;
+
+        a {
+          color: black;
+
+          :hover {
+            color: #4a87cf;
+          }
+          .icons {
+            @media (max-width: $sm), (max-width: $md) {
+                width: 1rem;
+                height: 1rem;   
+            }
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
