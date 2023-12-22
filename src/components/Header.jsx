@@ -9,11 +9,13 @@ import { contact } from "../utils/data";
 
 const Header = () => {
   const menuRef = useRef(null);
+  const menuBtnRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
   useOutsideAlerter({
     menuRef,
+    menuBtnRef,
     setMenuOpened,
   });
 
@@ -30,7 +32,7 @@ const Header = () => {
         <div className={css.name}>Bastian</div>
 
         <ul
-          // ref={menuRef}
+          ref={menuRef}
           style={getMenuStyles(menuOpened)}
           className={`flexCenter ${css.menu}`}
         >
@@ -67,6 +69,7 @@ const Header = () => {
         </div>
 
         <div
+        ref={menuBtnRef}
           className={css.menuIcon}
           onClick={() => {
             setMenuOpened((prev) => !prev);

@@ -191,8 +191,8 @@ export const listItem = {
 };
 
 export const getMenuStyles = (menuOpened) => {
-  if (document.documentElement.clientWidth <= 768) {
-    console.log("outside of sidebar reached")
+  if (document.documentElement.clientWidth <= 640) {
+    // console.log("outside of sidebar reached")
     return { right: !menuOpened && "-100%" };
   }
 };
