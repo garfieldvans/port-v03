@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className={css.wrapper}>
         <div className={css.container}>
-        <footer> <small>&copy; Copyright 2018, Bastian Haloho. All Rights Reserved</small> </footer>
+        <footer> <small>&copy; Copyright 2023, Bastian Haloho. All Rights Reserved</small> </footer>
         </div>
     </section>
   )
