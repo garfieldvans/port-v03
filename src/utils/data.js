@@ -41,6 +41,13 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
+    place: "PT ASI Pudjiastuti Aviation (Susi Air)",
+    tenure: "Oct 2023 - Apr 2024",
+    role: "Fullstack Developer",
+    detail:
+      "- Do bug fixing on company web application projects.\n- Make sure and maintanance to company web application projects to be save.\n- then code a new or renew features on company web application projects",
+  },
+  {
     place: "CodeMasters Id Bootcamp",
     tenure: "Sep 2023 - Dec 2023",
     role: "Fullstack Developer",
@@ -54,13 +61,7 @@ export const workExp = [
     detail:
       "Handle technical complaints from clients and provide solutions that can handle problems that occur.",
   },
-  {
-    place: "Raja Tas Batam",
-    tenure: "Apr 2020 - Aug 2021",
-    role: "Reseller",
-    detail:
-      "Selling goods on social media sites or platforms and online shops.",
-  },
+  
 ];
 
 export const contact = [
