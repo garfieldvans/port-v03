@@ -61,7 +61,6 @@
             (max-width: $md), (max-width: $sm) {
           position: absolute;
           left: 50%;
-          gap: 10rem;
         }
 
         position: absolute;
@@ -84,7 +83,6 @@
           background-size: 2px 30px;
           background-repeat: repeat-y;
           left: 48%;
-          z-index: 1;
           border-radius: 5px;
         }
 
