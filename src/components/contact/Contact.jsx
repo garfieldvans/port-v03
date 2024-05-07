@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFileContract } from "react-icons/fa";
 import { contact } from "../../utils/data";
-import resume from "../../../public/sebastian_resume.pdf";
+import resume from "../../../public/sebastian-resume.pdf";
 
 const Contact = () => {
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
             amazing together.
           </span>
           <span className="primaryText">
-            Start by <a href="mailto: bastianhaloho12@gmail.com">saying hi</a>
+            Start by <a href="mailto: bastianhalo19@gmail.com">saying hi</a>
           </span>
           <span className="primaryText">
             Or download my resume here.{" "}
