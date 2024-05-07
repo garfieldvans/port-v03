@@ -138,21 +138,21 @@ export const showcase = [
       "This website is a clone of the admin dashboard website from CodeMasters ID. Created using the React JS framework and styling components from Chakra UI. If you want to try the demo, use email: user1@example.com and password: password.",
       
   },
-  {
+   {
     id: 3,
-    repo: "https://github.com/garfieldvans/streaming-web",
-    title: "Flextream",
-    img: "flextream.jpg",
-    link: "https://flexstream-beta.vercel.app/",
-    detail: "This website is a project for creating an anime streaming website which was created using the React JS framework and styling components from Chakra UI. The API I use is the public API by https://api.jikan.moe/v4 ."
+    repo: "https://susiair.com",
+    title: "Susiair Official Website",
+    img: "susiair.png",
+    link: "https://susiair.com",
+    detail: "This project is a Susi Air Official Website project used by the company internally. The following project is a project that Susi Air dev and I are working on. The repository can only be accessed by dev admins."
   },
   {
     id: 4,
-    repo: "https://github.com/garfieldvans/portofolioV1-react-chakraUI",
-    title: "Portofolio v1",
-    img: "portv2.jpg",
-    link: "https://portofolio-v1-react-chakra-ui.vercel.app/",
-    detail:"This website is my previous portfolio website project. Using React JS framework and Chakra UI styling."
+    repo: "https://dashboard.susiair.com",
+    title: "Susi Air Super Apps",
+    img: "susidash.png",
+    link: "https://dashboard.susiair.com",
+    detail:"This project is a Susi Air admin dashboard super app project used by the company internally. The following project is a project that Susi Air dev and I are working on. The repository can only be accessed by dev admins."
   },
 ];
 
