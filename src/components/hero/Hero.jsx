@@ -31,11 +31,11 @@ const Hero = () => {
         <motion.div 
         variants={fadeIn("up", "tween", 0.2, 1)}
         className={css.person}>
-          <motion.img src="./profile.png" alt="" variants={fadeIn("up", "tween", 0.2, 1)}/>
+          <motion.img src="./profile.png" alt="" variants={fadeIn("left", "tween", 0.2, 1)}/>
         </motion.div>
 
-        <a href="mailto:bastianhaloho12@gmail.com" className={css.email}>
-          bastianhaloho12@gmail.com
+        <a href="mailto:bastianhalo19@gmail.com" className={css.email}>
+          bastianhalo19@gmail.com
         </a>
 
         <motion.div 
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
           </div>
           <div className={css.pengalaman}>
-            <div className="primaryText">0</div>
+            <div className="primaryText">1</div>
             <span className="secondaryText">Professional</span>
             <span className="secondaryText">Experiences</span>
           </div>
