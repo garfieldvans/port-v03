@@ -32,7 +32,10 @@ const Works = () => {
                 </div>
                 <div className={css.role}>
                   <h4>{item.role}</h4>
-                  <p>{item.detail}</p>
+                  <p>{item.detail.split('\n').map((line, i) => <span key={i}>
+                {i > 0 && <br />}
+                {' '}{line}
+              </span>)}</p>
                 </div>
               </motion.div>
             );
